@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute and nth child pseudo selectors</title>
+    <style>
+     .container{
+        margin: auto;
+    display: block;
+    width: 233px;
+    }
+        
+
+     input{
+        display:block;
+     }
+
+     input[type='text']{
+        padding: 23px;
+        border:2px solid red;
+     }
+     a[target]{
+        font-size:34px;
+        color:greenyellow;
+     }
+     a[target='_self']{
+        font-size:34px;
+        color:palevioletred;
+     }
+
+     input[type='email']{
+        color: blue;
+        border: 3px solid black ;
+
+     }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-container">
+            <input type="text" placeholder="Enter your name.">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul>
+            <li class="item" id="item1">item 1</li>
+            <li class="item" id="item2">item 2</li>
+            <li class="item" id="item3">item 3</li>
+            <li class="item" id="item4">item 4</li>
+            <li class="item" id="item5">item 5</li>
+        </ul>
+    </div>
+</body>
+</html>

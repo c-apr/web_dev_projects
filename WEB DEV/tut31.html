@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+      h1{
+        background-color:violet;
+        color: aquamarine;
+        text-align: center;
+        font-weight: bold;
+
+      }
+       
+      /* If p is contained by any li which is contained by div */
+
+      /* div li p{
+        color:burlywood;
+        background-color: aquamarine;
+        font-weight: bold;
+
+      } */
+
+       /* If p is right inside div then this CSS will be applied. */
+
+      /* div > p{
+        color:burlywood;
+        background-color: aquamarine;
+        font-weight: bold;
+
+      } */
+
+      /* If is right after div i.e. p is next sibling of div */
+
+      div + p{
+        color:burlywood;
+        background-color: aquamarine;
+        font-weight: bold;
+
+      }
+
+
+    </style>
+</head>
+<body>
+    <h1>More On Css Selectors</h1>
+
+    <div class="container">
+        <div class="row">
+          <ul>
+            <li class="item"><p>This is another paragrph inside li.</p></li>
+            <li>This will not get affected.</li>
+          </ul>
+            <p>This innermost para.</p>
+        </div>
+        <p>This is a bit out para.</p>
+    </div>
+    <p>This is the outermost para.</p>
+</body>
+</html>

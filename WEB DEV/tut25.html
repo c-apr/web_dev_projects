@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYMPASS</title>
+    <style>
+        /*CSS position : static(default) , absolute , relative , relative , sticky. */
+        .container{
+            border: 2px khaki black;
+            background-color: khaki;
+            height: 3444px;
+        }
+       .box{
+        display: inline-block;
+        border: 2px red solid;
+        height: 150px;
+        width: 120px;
+        margin: 2px;
+        
+       }
+       #box3{
+        /* relative: positions the element relative to its normal position and will leave a at its normal position */
+        /* position: relative; */
+
+        /* absolute:position the element relative to the position of its first parent */
+        /* position: absolute; */
+
+        /* fixed: positions the element relative to the browser window; */
+        /* position : fixed */
+        /* position: fixed; 
+        right: 4px;
+        bottom: 2px; */
+         
+        position: sticky;
+        top:3px;
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">  
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Chat with us</div>
+    <div class="box" id="box4">4</div>
+  </div>
+</body>
+</html>

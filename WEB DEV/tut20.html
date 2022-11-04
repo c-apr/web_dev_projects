@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX Model</title>
+    <style>
+        *{
+            box-sizing: border-box;      /*   *{}---Universal Selector (Can set a common property for every  selector until and unless it is overrided.)*/
+            padding:0px;
+            margin: 0px;
+        }
+
+        body{
+                background-color: rgb(6, 165, 238);
+        }
+        .container{
+            background-color: blanchedalmond;
+           border:2px solid rgb(221, 0, 255);
+           /* padding: 100px; */
+           
+           /* We can set margin/padding for top,right,bottom and left like this */
+           /* padding-top: 20px; 
+           padding-bottom:30px;
+           padding-left:30px;
+           padding-right:23px; */
+
+           margin: 20px;
+
+           /*padding:23px 24px 34px 29px;  padding/margin =top right bottom left;*/
+           padding: 34px 19px; /* padding:y(top/bottom) x(left/right);*/
+           border-radius: 23px;
+           width: 550px;
+          
+          
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusamus minus eligendi ut quas
+            voluptatem accusantium adipisci qui natus iure.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusamus minus eligendi ut quas
+            voluptatem accusantium adipisci qui natus iure.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusamus minus eligendi ut quas
+            voluptatem accusantium adipisci qui natus iure.</p>
+    </div>
+</body>
+
+</html>
